@@ -9,7 +9,7 @@ from TeamTeleRoid.database import db
 async def help_handler(_, event: Message):
     await event.reply_text(Config.ABOUT_HELP_TEXT.format(event.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("Our Channel", url="https://t.me/fym_update"),
+            [InlineKeyboardButton("Our Channel", url="https://t.me/ip_update"),
              InlineKeyboardButton("Our Group", url="https://t.me/iPopcornMovieGroup"),
              InlineKeyboardButton("About", callback_data="About_msg")]
         ])
@@ -31,7 +31,7 @@ async def start_handler(_,event: Message):
         photo='https://telegra.ph/file/815636d239a27fe41a7e1.jpg',
         caption=Config.START_MSG.format(event.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("Our Channel", url="https://t.me/Fym_update"),
+            [InlineKeyboardButton("Our Channel", url="https://t.me/ip_update"),
              InlineKeyboardButton("Our Group", url="https://t.me/iPopcornMovieGroup")],
 
              [InlineKeyboardButton("About", callback_data="About_msg"),
